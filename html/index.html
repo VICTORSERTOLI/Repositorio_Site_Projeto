@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Site</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">TMSI</a>
+      <!-- Estrutura menu responsivo -->
+      <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#paginaInicial">Página Inicial</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#topico">Tópico</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="paginaInicial" class="carousel-section">
+      <div class="carousel-container">
+        <div class="carousel-slide active slide-1">
+          <div class="hero-content">
+            <h1>Hardware</h1>
+            <p>Compreender e identificar peças do computador</p>
+            <a href="#" class="btn-primary">Mais informações</a>
+          </div>
+        </div>
+        <div class="carousel-slide-2">
+          <div class="hero-content">
+            <h1>Desing</h1>
+            <p>Desenvolvimento frontend</p>
+            <a href="#" class="btn-primary">Mais informações</a>
+          </div>
+        </div>
+        <div class="carousel-slide-3">
+          <div class="hero-content">
+            <h1>Projeto</h1>
+            <p>Atividade shark tank</p>
+            <a href="#" class="btn-primary">Mais informações</a>
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn"
+        id="prevBtn"><span class="botao esquerda"></span></button>
+        <button class="carousel-btn next-btn"
+        id="nextBtn">
+            <span class="botao direita"></span>
+          </button>
+        <div class="carousel-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Hardware</h2>
+        <div class="grid-2-cols">
+            <div>
+              <p>Compreender peças fisicas</p>
+              <p>Como indentificar modelo de placa-mãe</p>
+            </div>
+          <div class="stats-block">
+            <div class="stat-card">
+              <h3>33 Horas</h3>
+              <p>Carga Horária</p>
+            </div>
+            <div class="stat-card">
+              <h3>Segundo ano</h3>
+            </div>
+          </div>
+       </div>
+      </div>
+    </section>
+    <section id="topicos" class="section bg-light">
+      <div>
+        <h2>Tópicos das Disciplinas</h2>
+        <div class="grid-3-cols">
+            <div class="card">
+              <div class="icon">​🖥️</div>
+              <h3>Desenvolvimento Web</h3>
+              <p>Construção de sites responsivos</p>
+            </div>
+            <div class="card">
+              <div class="icon">​​🎵​</div>
+              <h3>Musica</h3>
+              <p>Entender e compreender o universo musical </p>
+            </div>
+            <div class="card">
+              <div class="icon">​​🗿​</div>
+              <h3>Praticas de hardware</h3>
+              <p>Praticas e teoria sobre como manipular hardware</p>
+            </div>
+        </div>
+      </div>
+   </section>
+   <section id="contato" class="section">
+      <div class="container">
+        <h2>Mais informações sobre o curso </h2>
+        <form class="contact-form" id="contatoForm">
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" placeholder="Informe seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="seuemail@exemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensgem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+                                  
