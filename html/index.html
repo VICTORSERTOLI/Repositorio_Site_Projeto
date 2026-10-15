@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Site</title>
+    <title>Projeto SITE</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="header">
       <a href="#" class="logo">TMSI</a>
-      <!-- Estrutura menu responsivo -->
-       <!--Para abrir no celular-->
+      <!--Estrutura de responsividade-->
+      <!-- Para abrir no celular -->
       <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -25,41 +25,39 @@
         </ul>
       </nav>
     </header>
-
     <section id="paginaInicial" class="carousel-section">
       <div class="carousel-container">
         <div class="carousel-slide active slide-1">
           <div class="hero-content">
-            <h1>Hardware</h1>
+            <h1>Harware</h1>
             <p>Compreender e identificar peças do computador</p>
-            <a href="#" class="btn-primary">Mais informações</a>
+            <a href="#sobre" class="btn-primary">Mais informações</a>
           </div>
         </div>
-        <div class="carousel-slide-2">
+        <div class="carousel-slide slide-2">
           <div class="hero-content">
             <h1>Desing</h1>
             <p>Desenvolvimento frontend</p>
-            <a href="#" class="btn-primary">Mais informações</a>
+            <a href="#topico" class="btn-primary">Mais informações</a>
           </div>
         </div>
-        <div class="carousel-slide-3">
+        <div class="carousel-slide slide-3">
           <div class="hero-content">
             <h1>Projeto</h1>
-            <p>Atividade shark tank</p>
-            <a href="#" class="btn-primary">Mais informações</a>
+            <p>Atividade Shark Tank</p>
+            <a href="#contato" class="btn-primary">Mais informações</a>
           </div>
         </div>
-        <button class="carousel-btn prev-btn"
-        id="prevBtn"><span class="botao esquerda"></span></button>
-        <button class="carousel-btn next-btn"
-        id="nextBtn">
-            <span class="botao direita"></span>
-          </button>
+        <button class="carousel-btn pre-btn" id="prevBtn">
+          <span class="botao esquerda"></span>
+        </button>
+        <button class="carousel-btn next-btn" id="nextBtn">
+          <span class="botao direita"></span>
+        </button>
         <div class="carousel-dots">
           <span class="dot active" data-index="0"></span>
           <span class="dot" data-index="1"></span>
           <span class="dot" data-index="2"></span>
-
         </div>
       </div>
     </section>
@@ -67,61 +65,69 @@
       <div class="container">
         <h2>Hardware</h2>
         <div class="grid-2-cols">
-            <div>
-              <p>Compreender peças fisicas</p>
-              <p>Como indentificar modelo de placa-mãe</p>
-            </div>
-          <div class="stats-block">
+          <div class="text-block">
+            <p>Compreender peças físicas</p>
+            <p>Como identificar modelo da placa mãe</p>
+          </div>
+          <div class="states=block">
             <div class="stat-card">
               <h3>33 Horas</h3>
-              <p>Carga Horária</p>
+              <p>Carga Hóraria</p>
             </div>
             <div class="stat-card">
               <h3>Segundo ano</h3>
             </div>
           </div>
-       </div>
-      </div>
-    </section>
-    <section id="topicos" class="section bg-light">
-      <div>
-        <h2>Tópicos das Disciplinas</h2>
-        <div class="grid-3-cols">
-            <div class="card">
-              <div class="icon">​🖥️</div>
-              <h3>Desenvolvimento Web</h3>
-              <p>Construção de sites responsivos</p>
-            </div>
-            <div class="card">
-              <div class="icon">​​🎵​</div>
-              <h3>Musica</h3>
-              <p>Entender e compreender o universo musical </p>
-            </div>
-            <div class="card">
-              <div class="icon">​​🗿​</div>
-              <h3>Praticas de hardware</h3>
-              <p>Praticas e teoria sobre como manipular hardware</p>
-            </div>
         </div>
       </div>
-   </section>
-   <section id="contato" class="section">
+    </section>
+    <section id="topico" class="section bg-light">
       <div class="container">
-        <h2>Mais informações sobre o curso </h2>
-        <form class="contact-form" id="contatoForm">
-            <div class="form-group">
-                <label for="name">Nome Completo</label>
-                <input type="text" id="name" placeholder="Informe seu nome completo">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="seuemail@exemplo.com">
-            </div>
-            <div class="form-group">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensgem" rows="5" placeholder="Como podemos ajudar?"></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Enviar mensagem</button>
+        <h2>Tópicos das Disciplinas</h2>
+        <div class="grid-3-cols">
+          <div class="card">
+            <div class="icon">🖥️</div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Construção de sites responsivos</p>
+          </div>
+          <div class="card">
+            <div class="icon">🤖</div>
+            <h3>Desenvolvimento by IA</h3>
+            <p>Construção de sites com ajuda de Inteligência artificial</p>
+          </div>
+          <div class="card">
+            <div class="icon">🖨️</div>
+            <h3>Organização de Computadores</h3>
+            <p>Entender como as peças funcionam por dentro</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Mais informações sobre o curso</h2>
+        <form class="contact=form" id="contatoForm">
+          <div class="form-group">
+            <lebel for="name">Nome Completo</lebel>
+            <input
+              type="text"
+              id="name"
+              placeholder="Informe seu nome completo"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seuemail@exemplo.com" />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              rows="5"
+              placeholder="Como podemos ajudar?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enviar Mensagem</button>
         </form>
       </div>
     </section>
@@ -129,15 +135,13 @@
       <div class="container grid-footer">
         <div class="footer-col">
           <h3>TMSI</h3>
-          <p>Curso Técnico em Manutenção e Suporte em Infomática</p>
+          <p>Curso de Técnico em Manutenção e Suporte em Informática</p>
         </div>
       </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026.Todos os direitos reservados.</p>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026. Todos os Direitos Reservados</p>
       </div>
     </footer>
-    <script text="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
   </body>
 </html>
-                                  
