@@ -15,14 +15,14 @@ document.addEventListener
         const slides = document.querySelectorAll( ".carousel-slide");
         const dots = document.querySelectorAll(".dot");
         const prevBtn = document.getElementById("prevBtn");
-        console.log("prevBtn", prevBtn);
+        // console.log("prevBtn", prevBtn);
         const nextBtn = document.getElementById("nextBtn");
-        console.log("nextBtn", nextBtn);
+        // console.log("nextBtn", nextBtn);
         let slideAtual = 0;
         let slideIntervalo;
         
         function showSlide(index){
-            console.log("Entrou na função");
+            // console.log("Entrou na função");
             slides.forEach((slide) =>
             slide.classList.remove("active"));
             dots.forEach((dot) => dot.classList.remove("active"));
@@ -47,7 +47,7 @@ document.addEventListener
         }
         
         nextBtn.addEventListener("click", () => {
-            console.log("Função next");
+            // console.log("Função next");
             nextSlide();
             stopSlide();
             startSlide();
@@ -72,21 +72,23 @@ document.addEventListener
 
         //Validação do formulário
         const  contatoForm =document.getElementById("contatoForm");
-        console.log("nome")
-        const  nome = document.getElementById("nome");
+        // console.log("nome")
+        const  nome = document.getElementById("name");
         const  email = document.getElementById("email");
         const  mensagem = document.getElementById("mensagem");
         function isValidEmail(email){
-            const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)*$/;
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             return emailRegex.test(email);
         }
 
         contatoForm.addEventListener("submit", (event) =>{
+            // console.log("entrou no evento")
             event.preventDefault();
             clearError();
             let isValid = true;
             //Validação do campo nome(verificar mínimo 3 Caracteres)
             if(nome.value.trim().length < 3){
+                // console.log("entrou no nome");
                 showError(nome,"O nome deve ter no mínimo 3 caracteres");
                 isValid = false;
             } 
@@ -97,9 +99,12 @@ document.addEventListener
             }
             //Validação do mensegem 
             if(mensagem.value.trim().length < 10){
+                // console.log("entrou na mensagem");
                 showError(mensagem,"Insira uma mensagem valida")
                 isValid = false;
             }
+            // console.log("if");
+            // console.log(isValid)
             //Validar se estiver tudo certo
             if(isValid){
                 clearError();
@@ -124,12 +129,15 @@ document.addEventListener
             });
         })
         function showError(inputElement,mensagem){
+            // console.log("entrou", inputElement, mensagem);
+            // console.log("entrou na função show error")
             const formGroup = inputElement.parentElement;
+            console.log("entrou", inputElement, mensagem);
             inputElement.classList.add("input-error");
             clearFieldError(inputElement);
             const errorMensagem = document.createElement("small");
             errorMensagem.className = "error-text";
-            errorMensagem.inmerText = mensagem;
+            errorMensagem.innerText = mensagem;
             formGroup.appendChild(errorMensagem);
         }
         //Remover erro individual do campo
